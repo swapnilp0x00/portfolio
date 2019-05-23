@@ -14,21 +14,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <head>
-          <meta charSet="UTF-8" />
-        </head>
-        <body className="body">
+        <div className="body">
           <Header />
           <section className='cardSection'>
             <div id='skills'>
               <Skills></Skills>
             </div>
-            <div id='about'> 
+            <div id='about'>
               <About></About>
             </div>
             <div id='experience'>
-              <WorkExperience></WorkExperience> 
-              </div>
+              <WorkExperience></WorkExperience>
+            </div>
 
           </section>
 
@@ -84,7 +81,7 @@ class App extends Component {
               </div>
             </div>
           </section>
-        </body>
+        </div>
       </div>
     );
   }
