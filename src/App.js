@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Header from "./components/header";
+import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 import {
   GithubBox,
   TwitterBox,
@@ -16,21 +19,20 @@ class App extends Component {
       <div className="App">
         <div className="body">
           <Header />
-          <section className='cardSection'>
-            <div id='skills'>
+          <Row>
+            <Col className="text-center" sm={4}>
               <Skills></Skills>
-            </div>
-            <div id='about'>
+            </Col>
+            <Col className="text-center" sm={4}>
               <About></About>
-            </div>
-            <div id='experience'>
+            </Col>
+            <Col className="text-center" sm={4}>
               <WorkExperience></WorkExperience>
-            </div>
+            </Col>
+          </Row>
 
-          </section>
-
-          <section className="linksSection">
-            <div className="logo-container">
+          <Row>
+            <Col>
               <div className="logo">
                 <a
                   href="https://github.com/praveshtora/"
@@ -43,18 +45,20 @@ class App extends Component {
                   />
                 </a>
               </div>
+            </Col>
+            <Col>
               <div className="logo">
                 <a
                   href="https://stackoverflow.com/users/10727611/pravesh-tora?tab=profile "
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <StackOverflow
-                    className="material-icons icon-links"
-                    aria-label="stackoverflow link"
-                  />
+                  rel="noopener noreferrer">
+                <StackOverflow
+                  className="material-icons icon-links"
+                  aria-label="stackoverflow link"/>
                 </a>
               </div>
+            </Col>
+            <Col>
               <div className="logo">
                 <a
                   href="https://www.linkedin.com/in/pravesh-tora/"
@@ -67,6 +71,8 @@ class App extends Component {
                   />
                 </a>
               </div>
+            </Col>
+            <Col>
               <div className="logo">
                 <a
                   href="https://twitter.com/coolpravesh"
@@ -79,8 +85,8 @@ class App extends Component {
                   />
                 </a>
               </div>
-            </div>
-          </section>
+            </Col>
+          </Row>
         </div>
       </div>
     );
