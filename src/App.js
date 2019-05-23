@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./components/header";
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import {
   GithubBox,
@@ -17,15 +18,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Container>
         <Header />
           <Row>
-            <Col sm={4}>
+            <Col xs={{order: 3}} md={{span: 4, order: 1}}>
               <Skills></Skills>
             </Col>
-            <Col sm={4}>
+            <Col xs={{order: 1}} md={{span:4, order: 2}}>
               <About></About>
             </Col>
-            <Col sm={4}>
+            <Col xs={{order:2}} md={{span:4, order: 3}}>
               <WorkExperience></WorkExperience>
             </Col>
           </Row>
@@ -85,6 +87,7 @@ class App extends Component {
               </div>
             </Col>
           </Row>
+        </Container>
       </div>
     );
   }
