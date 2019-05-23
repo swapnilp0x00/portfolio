@@ -17,20 +17,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="body">
-          <Header />
+        <Header />
           <Row>
-            <Col className="text-center" sm={4}>
+            <Col sm={4}>
               <Skills></Skills>
             </Col>
-            <Col className="text-center" sm={4}>
+            <Col sm={4}>
               <About></About>
             </Col>
-            <Col className="text-center" sm={4}>
+            <Col sm={4}>
               <WorkExperience></WorkExperience>
             </Col>
           </Row>
-
           <Row>
             <Col>
               <div className="logo">
@@ -87,7 +85,6 @@ class App extends Component {
               </div>
             </Col>
           </Row>
-        </div>
       </div>
     );
   }
