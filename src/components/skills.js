@@ -12,7 +12,7 @@ import { faPhp } from '@fortawesome/free-brands-svg-icons/faPhp';
 class Skills extends Component {
     render() {
         return (
-            <Card style={{'height':'450px'}}>
+            <Card>
                 <Card.Body>
                     <Card.Title style={{'text-align':'center'}}>
                         <h4>Skills</h4>

@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container>
+        <Container style={{height: '100vh'}}>
         <Header />
           <Row>
             <Col xs={{order: 3}} md={{span: 4, order: 1}}>
@@ -32,7 +32,7 @@ class App extends Component {
             </Col>
           </Row>
           <Row style={{"height":"100px","justify-content": "center"}}>
-           
+
               <div className="logo">
                 <a
                   href="https://github.com/praveshtora/"
@@ -45,8 +45,8 @@ class App extends Component {
                   />
                 </a>
               </div>
-          
-            
+
+
               <div className="logo">
                 <a
                   href="https://stackoverflow.com/users/10727611/pravesh-tora?tab=profile "
@@ -70,7 +70,7 @@ class App extends Component {
                   />
                 </a>
               </div>
- 
+
               <div className="logo">
                 <a
                   href="https://twitter.com/coolpravesh"
