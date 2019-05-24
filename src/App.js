@@ -31,7 +31,7 @@ class App extends Component {
               <WorkExperience></WorkExperience>
             </Col>
           </Row>
-          <Row>
+          <Row style={{"height":"100px"}}>
             <Col>
               <div className="logo">
                 <a
