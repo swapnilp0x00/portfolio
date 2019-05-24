@@ -31,8 +31,8 @@ class App extends Component {
               <WorkExperience></WorkExperience>
             </Col>
           </Row>
-          <Row style={{"height":"100px"}}>
-            <Col>
+          <Row style={{"height":"100px","justify-content": "center"}}>
+           
               <div className="logo">
                 <a
                   href="https://github.com/praveshtora/"
@@ -45,8 +45,8 @@ class App extends Component {
                   />
                 </a>
               </div>
-            </Col>
-            <Col>
+          
+            
               <div className="logo">
                 <a
                   href="https://stackoverflow.com/users/10727611/pravesh-tora?tab=profile "
@@ -57,8 +57,7 @@ class App extends Component {
                   aria-label="stackoverflow link"/>
                 </a>
               </div>
-            </Col>
-            <Col>
+
               <div className="logo">
                 <a
                   href="https://www.linkedin.com/in/pravesh-tora/"
@@ -71,8 +70,7 @@ class App extends Component {
                   />
                 </a>
               </div>
-            </Col>
-            <Col>
+ 
               <div className="logo">
                 <a
                   href="https://twitter.com/coolpravesh"
@@ -85,8 +83,7 @@ class App extends Component {
                   />
                 </a>
               </div>
-            </Col>
-          </Row>
+              </Row>
         </Container>
       </div>
     );
