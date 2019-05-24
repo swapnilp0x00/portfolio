@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 class WorkExperience extends Component {
     render(){
         return (
-            <Card>
+            <Card style={{'height':'450px'}}>
                 <Card.Body>
-                    <Card.Title>
+                    <Card.Title style={{'text-align':'center'}}>
                         <h4>Experience</h4>
                     </Card.Title>
                     <ul>
