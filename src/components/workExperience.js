@@ -6,7 +6,7 @@ class WorkExperience extends Component {
         return (
             <Card>
                 <Card.Body>
-                    <Card.Title>
+                    <Card.Title style={{'text-align':'center'}}>
                         <h4>Experience</h4>
                     </Card.Title>
                     <ul>
