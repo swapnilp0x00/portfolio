@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container style={{height: '100vh'}}>
+        <Container id ='main-container'>
         <Header />
           <Row>
             <Col xs={{order: 3}} md={{span: 4, order: 1}}>
