@@ -137,33 +137,35 @@ height: 450px;
   }
 }
 
-.leftDiv{
-  transform: rotateY(180deg);
-  transform-origin: 100% 0%;
-  transition: transform 2s;
-}
 
-:hover .leftDiv{
-  transform: rotateY(0deg);
-  transform-origin: 100% 0%;
-}
+/* On Mobile not rotation */
+@media (min-width: 756px) {
+  .leftDiv{
+    transform: rotateY(180deg);
+    transform-origin: 100% 0%;
+    transition: transform 1s;
+  }
+  :hover .leftDiv{
+    transform: rotateY(0deg);
+    transform-origin: 100% 0%;
+  }
 
-.middleDiv{
-  z-index: 100;
-  transition: transform 2s;
-}
+  .middleDiv{
+    z-index: 100;
+    transition: transform 1s;
+  }
 
-:hover .middleDiv{
-  transform: scale(1.1);
-}
+  :hover .middleDiv{
+    transform: scale(1.1);
+  }
 
-.rightDiv{
-  transform: rotateY(-180deg);
-  transform-origin: 0% 0%;
-  transition: transform 2s;
-}
-
-:hover .rightDiv{
-  transform: rotateY(0deg);
-  transform-origin: 0% 0%;
+  .rightDiv{
+    transform: rotateY(-180deg);
+    transform-origin: 0% 0%;
+    transition: transform 1s;
+  }
+  :hover .rightDiv{
+    transform: rotateY(0deg);
+    transform-origin: 0% 0%;
+  }
 }
