@@ -42,7 +42,7 @@
   height: 80%;
   background-color: white;
   margin-left : 40%
-} 
+}
 
 .linksSection {
   width : 100%;
@@ -120,14 +120,14 @@ height: 450px;
   width: 20px;
   height: 20px;
   z-index: 400;
-} 
+}
 
 @media (max-width : 425px) {
   #root {
     width: 100%;
     height: 100%;
   }
-  
+
   .App {
     display: block;
     justify-content: center;
@@ -135,4 +135,35 @@ height: 450px;
     width: 100%;
     height: 100%;
   }
+}
+
+.leftDiv{
+  transform: rotateY(180deg);
+  transform-origin: 100% 0%;
+  transition: transform 2s;
+}
+
+:hover .leftDiv{
+  transform: rotateY(0deg);
+  transform-origin: 100% 0%;
+}
+
+.middleDiv{
+  z-index: 100;
+  transition: transform 2s;
+}
+
+:hover .middleDiv{
+  transform: scale(1.1);
+}
+
+.rightDiv{
+  transform: rotateY(-180deg);
+  transform-origin: 0% 0%;
+  transition: transform 2s;
+}
+
+:hover .rightDiv{
+  transform: rotateY(0deg);
+  transform-origin: 0% 0%;
 }

@@ -20,14 +20,14 @@ class App extends Component {
       <div className="App">
         <Container style={{height: '100vh'}}>
         <Header />
-          <Row>
-            <Col xs={{order: 3}} md={{span: 4, order: 1}}>
+          <Row className="active">
+            <Col className="leftDiv" xs={{order: 3}} md={{span: 4, order: 1}}>
               <Skills></Skills>
             </Col>
-            <Col xs={{order: 1}} md={{span:4, order: 2}}>
+            <Col className="middleDiv" xs={{order: 1}} md={{span:4, order: 2}}>
               <About></About>
             </Col>
-            <Col xs={{order:2}} md={{span:4, order: 3}}>
+            <Col className="rightDiv" xs={{order:2}} md={{span:4, order: 3}}>
               <WorkExperience></WorkExperience>
             </Col>
           </Row>
